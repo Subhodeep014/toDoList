@@ -9,7 +9,7 @@ body{
     font-family: 'Fredoka One', cursive;
     margin-top: 0;
     color: #36d64b;
-    background-image: url(background-pic2.jpg);
+    background-image: url("https://raw.githubusercontent.com/Subhodeep014/toDoList/main/background-pic2.jpg");
     min-height: 100vh;
     background-size: 1950px;
     display: flex;
