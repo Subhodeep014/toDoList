@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredoka One', cursive;
+    margin-top: 0;
+    color: #36d64b;
+    background-image: url(/codeFoxx_program/ToDoList/images/background-pic2.jpg);
+    min-height: 100vh;
+    background-size: 1950px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 5px; */
+}
+.container{
+    width: 100%;
+    margin: auto auto auto auto;
+}
+.container-main{
+    min-width: 500px;
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+
+}
+.nav h2{
+    font-size: 3rem;
+    text-shadow: 4px 1px 2px rgb(24, 24, 24), 0 0 1em #000000, 0 0 0.2em #444444;
+}
+.fa-solid.fa-clipboard-list{
+    margin-right: 10px;
+}
+.user-input{
+    width: 450px;
+    text-align: center;
+    margin-top: 20px;
+}
+.user-input input[type=text]{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 85%;
+    outline: none;
+    padding: 15px 8px 15px 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+.user-input:focus{
+    box-shadow: 0 0 5px #4428e2;
+    border: 1px solid #e22865;
+
+}
+.user-input button{
+    cursor: pointer;
+    padding: 15px 8px 15px 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: rgb(23, 180, 49);
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgb(255, 255, 255);
+
+}
+.user-input button:hover{
+    background-color: rgb(76, 143, 21);
+    color: rgb(255, 255, 255);
+}
+.todo-items{
+    /* width: 400px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.fa-solid.fa-trash{
+    color: rgb(255, 55, 55);
+}
+
+.item{
+    word-wrap: break-word;
+    word-break: break-all;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: #2e2e2e;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+}
+.item:hover{
+    box-shadow: 0 0 25px #474747;
+    border: 1px solid #eeeeee;
+
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline;
+}
+i.fa-solid.fa-square-check{
+    color: lightgray;
+}
+i.fa-solid.fa-square-check.checkIconActive{
+    color: limegreen;
+}
+@media(max-width:768px){
+    .nav{
+        align-items: center;
+        flex-direction: column; 
+    }
+    .nav h2{
+        margin: 10px 0;
+    }
+    .user-input{
+        width: 100%;
+    }
+    .todo-items{
+        width: 100%;
+    }    
+}
+@media(max-width:480px){
+    .user-input{
+        width: 65%;
+    }
+    .container-main{
+        width: auto;
+    }
+    .user-input input[type=text]{
+        width: 400px;
+    }
+}
+@media(max-width:320px){
+    .user-input{
+        width: 45%;
+    }
+}
