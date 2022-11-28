@@ -89,14 +89,7 @@ body{
     background-color: rgb(76, 143, 21);
     color: rgb(255, 255, 255);
 }
-.todo-items{
-    /* width: 400px; */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-}
+
 .fa-solid.fa-trash{
     color: rgb(255, 55, 55);
 }
@@ -113,6 +106,8 @@ body{
     padding: 16px;
     color: #2e2e2e;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1rem;
     text-transform: uppercase;
     -webkit-transition: all 0.2s ease-in-out;
@@ -138,6 +133,10 @@ i.fa-solid.fa-square-check{
 i.fa-solid.fa-square-check.checkIconActive{
     color: limegreen;
 }
+.todo-items{
+    width: 90%;
+    margin: auto;
+}
 @media(max-width:768px){
     .nav{
         align-items: center;
@@ -151,9 +150,6 @@ i.fa-solid.fa-square-check.checkIconActive{
     }
     .user-input input[type=text]{
         width: 300px;
-    }
-    .item{
-        width: 80%;
     }
     body{
         background-size: 1200px;
@@ -169,5 +165,10 @@ i.fa-solid.fa-square-check.checkIconActive{
     .user-input input[type=text]{
         width: 250px;
     }
+}
+@media(max-width:480px){
+    .user-input input[type=text]{
+        width: 200px;
+    }   
 }
 
