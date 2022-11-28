@@ -7,23 +7,24 @@
 
 body{
     font-family: 'Fredoka One', cursive;
-    margin-top: 0;
+    margin: auto;
     color: #36d64b;
     background-image: url("https://raw.githubusercontent.com/Subhodeep014/toDoList/main/background-pic2.jpg");
     min-height: 100vh;
     background-size: 1950px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    width: 60%;
     /* padding-top: 5px; */
 }
 .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    margin: auto auto auto auto;
+    margin: 0;
 }
 .container-main{
-    min-width: 500px;
+    width: 100%;
 }
 
 
@@ -36,7 +37,7 @@ body{
     /* flex-wrap: wrap; */
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0 20px 0;
 
 }
 .nav h2{
@@ -47,13 +48,13 @@ body{
     margin-right: 10px;
 }
 .user-input{
-    width: 450px;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 .user-input input[type=text]{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 85%;
+    width: 80%;
     outline: none;
     padding: 15px 8px 15px 8px;
     border: 1px solid lightgray;
@@ -146,25 +147,27 @@ i.fa-solid.fa-square-check.checkIconActive{
         margin: 10px 0;
     }
     .user-input{
-        width: 100%;
-    }
-    .todo-items{
-        width: 100%;
-    }    
-}
-@media(max-width:480px){
-    .user-input{
-        width: 65%;
-    }
-    .container-main{
-        width: auto;
+        width: 420px;
     }
     .user-input input[type=text]{
-        width: 400px;
+        width: 300px;
     }
+    .item{
+        width: 80%;
+    }
+    body{
+        background-size: 1200px;
+    }  
 }
-@media(max-width:320px){
+@media(max-width:480px){
+    body{
+        width: 100%;
+    }
     .user-input{
-        width: 45%;
+        width: 320px;
+    }
+    .user-input input[type=text]{
+        width: 250px;
     }
 }
+
